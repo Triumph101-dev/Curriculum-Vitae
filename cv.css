@@ -1,0 +1,195 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid #4CAF50;
+}
+
+header .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+header a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px;
+}
+
+/* Section headers */
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+/* Skills and Soft Skills list */
+#skills ul, #soft-skills ul {
+    list-style-type: none;
+}
+
+#projects .project {
+    margin-bottom: 20px;
+}
+
+#projects .project h3 {
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+#projects .project ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Contact Section */
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    color: #888;
+}
+
+footer p {
+    margin-top: 10px;
+}
+ /* Link styles */
+a{
+  text-decoration: none;
+  color: #4CAF50;
+  
+}
+
+/* Responsive Design - Mobile View */
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    #projects .project h3 {
+        font-size: 1.1rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    #skills ul, #soft-skills ul {
+        padding-left: 20px;
+    }
+
+    /* Make the links stack on top of each other on mobile */
+    header p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header a {
+        margin-top: 5px;
+    }
+}
+
+/* Tablet View (up to 1024px) */
+@media (max-width: 1024px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    #projects .project h3 {
+        font-size: 1.15rem;
+    }
+}
+
+/* Desktop View (1025px and up) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 1rem;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    header {
+        margin-bottom: 50px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    #projects .project h3 {
+        font-size: 1.3rem;
+    }
+}
